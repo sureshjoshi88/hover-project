@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .main{
+        display: flex;
+        margin-top: 10vh;
+        padding: 30px;
+        height: 80vh;
+        
+      }
+   .bg1{
+    background-color: #a1c8d7;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+   }
+   .bg2{
+    background-color: #0d232e;
+    padding: 20px;
+    color: #a1c8d7;
+   }
+   .bg3{
+    background-color: #a1c8d7;
+    padding: 20px;
+   }
+   .bg4{
+    background-color: #0d232e;
+    padding: 20px;
+    color: #a1c8d7;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   }
+  .child1{
+    position: relative;
+    transform: rotate(-3deg);
+    margin-top: 5vh;
+    width: 33%;
+  }
+  .child1:hover{
+    transform: translatey(-80px) rotate(-3deg);
+    transition: all 0.8s 0.02s;
+   
+  }
+  .child1:hover .bg1{
+    background-color: #0d232e;
+    color: #a1c8d7;
+    transition: all 0.8s 0.01s;
+
+  }
+  .child1:hover .bg2{
+    background-color: #a1c8d7;
+    color: #0d232e;
+    transition: all 0.8s 0.01s;
+
+  }
+  .child1:hover .bg3{
+    background-color: #0d232e;
+    color: #a1c8d7;
+    transition: all 0.8s 0.01s;
+
+  }
+  .child1:hover .bg4{
+    background-color: #a1c8d7;
+    color: #0d232e;
+    transition: all 0.8s 0.01s;
+
+  }
+  .child2{
+    background-color: #e99b57;
+    width: 33%;
+    /* z-index: 99; */
+    height: 73vh;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .child2:hover{
+    transform: translatey(-80px) rotate(3deg);
+    transition: all 0.8s 0.02s;
+   background-color: #482423;
+  }
+  .child2:hover img{
+    mix-blend-mode: color-burn;
+
+  }
+  .bgg1{
+    color: #482423;
+  }
+  .child2:hover .bgg1{
+    color: #e99b57;
+  }
+  .child3{
+    background-color: #d3a7e7;
+    width: 33%;
+    /* z-index: 999; */
+    height: 73vh;
+    border-radius: 20px;
+    padding: 20px;
+    color: #231036;
+    transform: rotate(3deg);
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  .child3:hover{
+    transform: translatey(-80px) rotate(3deg);
+    transition: all 0.8s 0.02s;
+   background-color: #231036;
+   color: #d3a7e7;
+  }
+  
+ .sss{
+  mix-blend-mode: color-burn;
+ }
+ .suresh{
+  height: 300px;
+  width: 100%;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  margin-top: -170px;
+ }
+ @media (max-width:768px) {
+  .suresh{
+    display: none;
+  }
+  .main{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+ }
+    </style>
+</head>
+<body>
+    <div class="main">
+      <div class="child1">
+           <div class="bg1">
+            <h3>Online store</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quae.</p>
+           </div>
+           <div class="bg2">
+            <h5>online course</h5>
+           </div>
+           <div class="bg3">
+            <h5>Digital download    </h5>
+           </div>
+           <div class="bg4">
+            <h5>coching session</h5>
+           </div>
+        </div>
+      <div class="child2">
+           <div class="bgg1">
+            <h3>Website ></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quae.</p>
+           </div>
+            <div style="mix-blend-mode: color-burn;">
+              <img  width="100%" src="https://images.ctfassets.net/svo3kge9wizu/6n90xxVeijDNrWjKYvXt25/477a12f757149bdbd4a10ee0578e9ae6/website.png" alt="">
+            </div>
+           </div>
+           <div class="child3">
+            <div class="bgg2">
+             <h3>Email marketing></h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quae.</p>
+            </div>
+             <div>
+               <img class="sss"  width="100%" src="https://images.ctfassets.net/svo3kge9wizu/3jlOzuKu25duiBwUfuouaO/a7e33f60ffbb2ec83e33c2f6997c8bb2/email-marketing.png" alt="">
+             </div>
+            
+            </div>
+        </div>
+      <div class="suresh">
+
+      </div>
+</body>
+</html>
